@@ -12,8 +12,8 @@ const eventModel = db.define(
     },
     user_id: Sequelize.UUID,
     description: Sequelize.STRING,
-    assigned_date: Sequelize.DATE,
-    created_date: Sequelize.DATE,
+    createdAt: Sequelize.DATE,
+    updatedAt: Sequelize.DATE,
   },
   {
     paranoid: true,
