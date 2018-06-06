@@ -28,4 +28,15 @@ class AuthenticationError extends ServiceError {
   }
 }
 
-export { ValidationError, AccessDeniedError, AuthenticationError };
+class EmailExistError extends ServiceError {
+  constructor() {
+    super('Email already existing.');
+  }
+}
+
+export {
+  ValidationError,
+  AccessDeniedError,
+  AuthenticationError,
+  EmailExistError,
+};

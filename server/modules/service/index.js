@@ -4,6 +4,7 @@ import {
   AccessDeniedError,
   AuthenticationError,
   ValidationError,
+  EmailExistError,
 } from '../errors';
 
 class Service {
@@ -19,6 +20,10 @@ class Service {
 
   showAuthenticationError() {
     throw new AuthenticationError();
+  }
+
+  showEmailExistError() {
+    throw new EmailExistError();
   }
 }
 

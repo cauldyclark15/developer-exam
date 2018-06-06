@@ -14,7 +14,8 @@ const userModel = db.define(
     last_name: Sequelize.STRING,
     email: Sequelize.STRING,
     password: Sequelize.STRING,
-    created_date: Sequelize.DATE,
+    createdAt: Sequelize.DATE,
+    updatedAt: Sequelize.DATE,
   },
   {
     paranoid: true,
